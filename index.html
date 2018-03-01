@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simon-Game</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<div class="container">
+  <div class="frame">
+    <div class="title">Simon</div>
+     <div id="0" class="pad green"><audio autoplay><source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source></audio></div>
+    <div id="1" class="pad red"><audio autoplay><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source></audio></div>
+    <div id="2" class="pad yellow"><audio autoplay><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source></audio></div>
+    <div id="3" class="pad blue"><audio autoplay><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source></audio></div>
+    
+   <div class="board"></div>
+    <div class="control-panel"> 
+      <button id="start" class="start same-line" onclick="start()">start</button>
+      <button id="strict" class="strict same-line" onclick="strict()">strict</button>
+      <div class="display same-line">-&nbsp; -</div>     
+  <span class="switch">
+		<span id="click" class="switch-border2">
+			<input onclick="onoff()" id="switch1" type="checkbox" checked />
+			<label for="switch1"></label>
+			<span class="switch-top"></span>
+			<span class="switch-shadow"></span>
+			<span class="switch-handle"></span>
+			<span class="switch-handle-left"></span>
+			<span class="switch-handle-right"></span>
+			<span class="switch-handle-top"></span>
+			<span class="switch-handle-bottom"></span>
+			<span class="switch-handle-base"></span>
+			<span class="switch-led switch-led-green">
+				<span class="switch-led-border">
+					<span class="switch-led-light">
+						<span class="switch-led-glow"></span>
+					</span>
+				</span>
+			</span>
+			<span class="switch-led switch-led-red">
+				<span class="switch-led-border">
+					<span class="switch-led-light">
+						<span class="switch-led-glow"></span>
+					</span>
+				</span>
+			</span>
+	  </span>
+</span>
+    </div>
+</div> 
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
